@@ -1,0 +1,99 @@
+/* 1. box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. 기본 여백 */
+body {
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 3. 높이 */
+html,
+body {
+    height: 100%;
+}
+
+/* 4. 미디어 기본값 */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+/* 5. 폰트 상속 */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 버튼 기본 스타일 */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* 텍스트 오버플로우 / 줄바꿈 */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* 링크 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 루트 stacking context */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* 모션 관련 */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+/* 리스트 초기화가 필요하면 */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
