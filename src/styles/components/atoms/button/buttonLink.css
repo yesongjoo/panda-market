@@ -1,0 +1,11 @@
+.buttonLink {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    padding: 16px 24px;
+    border-radius: 999px;
+    background-color: var(--color-primary-100);
+    text-decoration: none;
+}
