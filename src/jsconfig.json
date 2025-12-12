@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-        "baseUrl": "src",
+        "baseUrl": "./src",
         "paths": {
+            "@src/*": ["*"],
             "@components/*": ["components/*"],
             "@atoms/*": ["components/atoms/*"],
             "@molecules/*": ["components/molecules/*"],
@@ -12,11 +13,11 @@
             "@api/*": ["api/*"],
             "@hooks/*": ["hooks/*"],
             "@utils/*": ["utils/*"],
-            "@styles/*": ["styles/*"],
 
             "@assets/*": ["assets/*"],
             "@img/*": ["assets/img/*"],
             "@icons/*": ["assets/icons/*"]
         }
-    }
+    },
+    "include": ["src"]
 }

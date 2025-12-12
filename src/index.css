@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 필요하면 최소한의 reset만 유지 (선택) */
+@layer base {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+    }
+
+    body {
+        background-color: #f9fafb; /* 선택 */
+        color: #111827; /* 선택 */
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font: inherit;
+    }
+
+    ul,
+    ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}

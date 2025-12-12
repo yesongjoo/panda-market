@@ -1,9 +1,0 @@
-/* 1. 리셋 */
-@import "@styles/base/reset.css";
-
-/* 2. 토큰 */
-@import "@styles/tokens/color.css";
-@import "@styles/tokens/typography.css";
-
-/* 3. 전역 스타일 */
-@import "@styles/base/global.css";

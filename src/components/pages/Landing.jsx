@@ -1,14 +1,14 @@
 import React from "react";
-import ButtonBase from "../atoms/button/ButtonBase";
-import ButtonLink from "../atoms/button/ButtonLink";
+import ButtonPill from "@atoms/button/ButtonPill";
+import Button from "@atoms/button/Button";
+import ButtonLike from "@atoms/button/ButtonLike";
 
 const Landing = () => {
     return (
         <div>
-            <ButtonBase> 돌아가기</ButtonBase>
-            {/* <div style={{ width: "555px" }}> */}
-            <ButtonLink to="/products">구경하러 가기</ButtonLink>
-            {/* </div> */}
+            <ButtonPill>되돌아가기</ButtonPill>
+            <Button>등록</Button>
+            <ButtonLike />
         </div>
     );
 };
